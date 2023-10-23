@@ -1,0 +1,33 @@
+<html>
+
+<body>
+    <script>
+        let sym1 = Symbol('my symbol 1');
+        let sym2 = Symbol('my symbol 1');
+        console.log(sym1 == sym2);
+
+        let std = {};
+        std['name'] = 'Sachin';
+        std['address'] = 'bangalore';
+        let roll = Symbol('Roll Number');
+        std[roll] = 101;
+        let mark = Symbol('Student mark');
+        std[mark] = 95;
+        console.log(std);
+
+        for (key in std) {
+            console.log(key + "--------" + std[key])
+        }
+
+        let mykeys = Object.keys(std);
+        console.log(mykeys);
+
+        let allSymbols = Object.getOwnPropertySymbols(std);
+        console.log(allSymbols);
+
+        let std2 = Object.assign(std);
+        console.log(std2);
+    </script>
+</body>
+
+</html>
