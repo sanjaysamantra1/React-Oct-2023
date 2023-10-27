@@ -1,0 +1,14 @@
+<script>
+    console.time('timeToexecuteF1Function');
+    function f1() {
+        console.log("I am f1....")
+    }
+    f1();
+    console.timeEnd('timeToexecuteF1Function');
+
+    console.time('timeToexecuteMyLoop');
+    for (let i = 1; i <= 10000; i++) {
+        document.write('Hello Javascript<br>');
+    }
+    console.timeEnd('timeToexecuteMyLoop');
+</script>

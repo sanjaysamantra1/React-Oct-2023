@@ -1,0 +1,19 @@
+<script>
+    var a = 10; // global
+    let b = 20; // global
+    const c = 30; // global
+
+    function f1() {
+        var d = 40;
+        f = 60; // global
+        console.log('I am f1');
+        console.log(a, b, c, d, f);
+    }
+    function f2() {
+        var e = 50;
+        console.log('I am f2');
+        console.log(a, b, c, e, f);
+    }
+    f1();
+    f2();
+</script>

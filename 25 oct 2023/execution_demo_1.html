@@ -1,0 +1,18 @@
+<script>
+    function f1() {
+        console.log("f1 started....");
+        f2();
+        console.log("f1 ended...");
+    }
+    function f2() {
+        console.log("f2 started....");
+        console.log("Hello world");
+        f3();
+        console.log("f2 ended...");
+    }
+    function f3() {
+        console.log("f3 started");
+        console.log("f3 ended...");
+    }
+    f1();
+</script>
