@@ -1,0 +1,13 @@
+<script>
+    // this = where the function is called/invoked
+    function f1() {
+        console.log(this); // window
+    }
+    f1();
+
+    // this = where the function is declared/written
+    let f2 = () => {
+        console.log(this); // window
+    }
+    f2();
+</script>

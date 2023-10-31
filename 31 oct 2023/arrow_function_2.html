@@ -1,0 +1,18 @@
+<script>
+    let std = {
+        fname: 'sachin',
+        lname: 'tendulkar',
+
+        fullName1: function () {
+            // this = how the function is called
+            console.log(this.fname + ' ' + this.lname);
+        },
+        fullName2: () => {
+            // this = where the function is declared
+            console.log(this.fname + ' ' + this.lname);
+        }
+    }
+
+    std.fullName1();
+    std.fullName2();
+</script>

@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <button id="btn1">My button-1</button>
+    <button id="btn2">My button-2</button>
+    <button id="btn3">My button-3</button>
+
+    <script>
+        let f1 = function() {
+            this.style.backgroundColor = 'red';
+            console.log(this); // this = btn1 / btn2 / btn3
+        }
+
+        // 'this' to be dynamic , this value should keep changing
+        document.getElementById('btn1').addEventListener('click', f1);
+        document.getElementById('btn2').addEventListener('click', f1);
+        document.getElementById('btn3').addEventListener('click', f1);
+    </script>
+</body>
+
+</html>

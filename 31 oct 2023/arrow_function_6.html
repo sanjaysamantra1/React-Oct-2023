@@ -1,0 +1,23 @@
+<script>
+    class Employee {
+        name = "Sachin";
+        greet1 = function () {
+            console.log('Hello ' + this.name + this);
+        }
+        greet2 = () => {
+            console.log('Hello ' + this.name + this);
+        }
+    }
+    let emp1 = new Employee();
+    emp1.greet1();
+    emp1.greet2();
+
+    // let a = emp1.greet1;
+    // a();
+
+    let b = emp1.greet2;
+    b();
+
+    let c = b;
+    c();
+</script>

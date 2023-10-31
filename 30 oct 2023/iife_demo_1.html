@@ -1,0 +1,11 @@
+<script>
+    function f1() {
+        if (true) {
+            (function(){
+                var a = 10; // function
+            });
+        }
+        console.log(a);
+    }
+    f1();
+</script>
