@@ -1,0 +1,15 @@
+<script>
+    for (i = 5; i >= 1; i--) {
+        document.write(i + '<br>');
+    }
+    document.write('<br>'+'================================================');
+
+    function countDown(fromNumber) {
+        document.write('<br>'+fromNumber+"<br>");
+        let nextNumber = fromNumber - 1;
+        if (nextNumber > 0) {
+            countDown(nextNumber);
+        }
+    }
+    countDown(5);
+</script>
