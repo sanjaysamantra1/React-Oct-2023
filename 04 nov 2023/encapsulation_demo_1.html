@@ -1,0 +1,27 @@
+<script>
+    function openAccount(initialBal) {
+        console.log(`Your Account is opened with amount ${initialBal}`);
+        let accNo = 111222333;
+        let accBal = initialBal;
+
+        return { // Exposing the functions not the data
+            displayInfo: function () {
+                console.log(accNo, accBal)
+            },
+            deposit: function (amt) {
+                if (amt < 0) {
+                    alert('I dont want your money')
+                }else{
+                    accBal = accBal + amt;
+                }
+            }
+        }
+    }
+    let account = openAccount(5000);
+    console.log(account);
+
+    account.displayInfo();
+    account.deposit(2000);
+    account.displayInfo();
+    console.dir(account.deposit);
+</script>
