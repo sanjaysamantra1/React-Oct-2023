@@ -1,0 +1,22 @@
+<script>
+    let marks = [10, 50, 20, 40, 30];
+    marks.sort();
+    console.log(marks);
+
+    let arr = [10, 107, 108, 9, 95, 96, 25, 35, 91, 8, 105];
+    arr.sort();  // sort() understands each element as a string
+    console.log(arr);
+    
+    // How to Perform Numeric Sort
+    arr.sort((a, b) =>{
+        return a-b;
+    });
+    console.log(arr);
+
+    let employees = [
+        { eId: 101, name: 'sanjay', sal: 5000, gender: 'male' },
+        { eId: 104, name: 'geeta', sal: 8000, gender: 'female' },
+        { eId: 103, name: 'sameer', sal: 7000, gender: 'male' },
+        { eId: 102, name: 'sita', sal: 9000, gender: 'female' }
+    ];
+</script>

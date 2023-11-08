@@ -1,0 +1,25 @@
+<script>
+    let cars = ['tata', 'honda', 'maruti', 'hundai', 'toyota'];
+
+    // 1. Loop
+    for (let i = 0; i < cars.length; i++) {
+        document.write(cars[i] + "<br>")
+    }
+    document.write('<br>=========================================<br>');
+
+    // 2. for-in loop
+    for (i in cars) {
+        document.write(cars[i] + "<br>");
+    }
+    document.write('<br>=========================================<br>');
+
+    // 3. for-of loop
+    for (car of cars) {
+        document.write(car+ "<br>");
+    }
+
+    // 4. forEach()
+    cars.forEach((val,ind)=>{
+        console.log(val,ind);
+    })
+</script>

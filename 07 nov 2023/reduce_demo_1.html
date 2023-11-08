@@ -1,0 +1,20 @@
+<script>
+    let marks = [10, 20, 30, 40, 50];
+    let sum = marks.reduce((prev, cur) => {
+        console.log(prev, cur);
+        return prev + cur;
+    })
+    console.log(sum);
+
+
+    let str = 'entertainment';
+    /* let result = {};
+    for (char of str) {
+        result[char] = result[char] ? result[char] + 1 : 1;
+    } */
+    let result = str.split('').reduce((result, char) => {
+        result[char] = result[char] ? result[char] + 1 : 1;
+        return result;
+    }, {});
+    console.log(result);
+</script>
